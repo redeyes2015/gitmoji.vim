@@ -1,10 +1,3 @@
-function! s:gitmoji(line)
-  call feedkeys("i")
-  call feedkeys(strcharpart(a:line, 0, 1))
-  call feedkeys(" ")
-  call feedkeys("\<Esc>")
-endfunction
-
 let s:list = [
  \ "🎨 Improve structure / format of the code.",
  \ "⚡️ Improve performance.",
@@ -77,6 +70,12 @@ let s:list = [
  \ "🧑‍💻 Improve developer experience",
  \ ]
 
+function! s:gitmoji(line)
+  call feedkeys("i")
+  call feedkeys(strcharpart(a:line, 0, 1))
+  call feedkeys(" ")
+  call feedkeys("\<Esc>")
+endfunction
 
 command! -bang -nargs=0 Gitmoji
   \ call fzf#run(fzf#wrap({
