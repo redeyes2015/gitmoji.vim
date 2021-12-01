@@ -18,6 +18,15 @@ Let you select gitmoji with fzf
 
 Hit `<Enter>` would insert the selected emoji before the cursor.
 
+# How to update
+
+```sh
+curl -O https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json
+node -p 'require("./gitmojis.json").gitmojis.map(e => ` \\ "${e.emoji} ${e.description}",`).join("\n")' > gitmojis.list
+
+# And then replace ./plugin/gitmoji.vim accordingly
+```
+
 # Credit
 
 This is a fork/copy cat of [yazgoo/unicodemoji](https://github.com/yazgoo/unicodemoji). The original credit
