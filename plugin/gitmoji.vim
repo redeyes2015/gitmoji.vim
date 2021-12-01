@@ -1,5 +1,3 @@
-let s:path = fnamemodify(resolve(expand('<sfile>:p')), ':h')
-
 function! s:gitmoji(line)
   call feedkeys("i")
   call feedkeys(strcharpart(a:line, 0, 1))
