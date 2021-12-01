@@ -11,6 +11,7 @@ let s:list = [
  \ "🎉 Begin a project.",
  \ "✅ Add, update, or pass tests.",
  \ "🔒️ Fix security issues.",
+ \ "🔐 Add or update secrets.",
  \ "🔖 Release / Version tags.",
  \ "🚨 Fix compiler / linter warnings.",
  \ "🚧 Work in progress.",
