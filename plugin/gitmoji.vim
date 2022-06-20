@@ -69,6 +69,7 @@ let s:list = [
  \ "🩺 Add or update healthcheck.",
  \ "🧱 Infrastructure related changes.",
  \ "🧑‍💻 Improve developer experience",
+ \ "💸 Add sponsorships or money related infrastructure.",
  \ ]
 
 function! s:gitmoji(line)
