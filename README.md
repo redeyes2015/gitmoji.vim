@@ -21,7 +21,7 @@ Hit `<Enter>` would insert the selected emoji before the cursor.
 # How to update
 
 ```sh
-curl -O https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json
+curl -O https://raw.githubusercontent.com/carloscuesta/gitmoji/master/packages/gitmojis/src/gitmojis.json
 node -p 'require("./gitmojis.json").gitmojis.map(e => ` \\ "${e.emoji} ${e.description}",`).join("\n")' > gitmojis.list
 
 vim ./plugin/gitmoji.vim '+2,/]$/-1d' '+1r ./gitmojis.list' '+wq'
