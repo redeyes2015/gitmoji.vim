@@ -10,7 +10,7 @@ let s:list = [
  \ "💄 Add or update the UI and style files.",
  \ "🎉 Begin a project.",
  \ "✅ Add, update, or pass tests.",
- \ "🔒️ Fix security issues.",
+ \ "🔒️ Fix security or privacy issues.",
  \ "🔐 Add or update secrets.",
  \ "🔖 Release / Version tags.",
  \ "🚨 Fix compiler / linter warnings.",
